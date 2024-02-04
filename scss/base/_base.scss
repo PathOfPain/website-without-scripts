@@ -1,0 +1,76 @@
+@font-face {
+  font-family: "Playfair Display";
+  src: url("/fonts/PlayfairDisplay-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Regular.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Bold.woff2") format("woff2");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: $font-main;
+  background-color: $dark;
+  color: $white;
+  font-size: 16px;
+}
+
+a {
+  color: $white;
+  transition: all 0.2s ease-in;
+
+  &:hover {
+    color: $accent;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 1110px;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.title-2 {
+  color: $accent;
+  font-family: $font-accent;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.link-bold {
+  color: $accent;
+  font-weight: 700;
+}
+
+::placeholder {
+  color: #000000;
+  font-style: italic;
+}
